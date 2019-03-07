@@ -19,9 +19,9 @@
 
 <div class="container">
   <br><br><br>
-  {%if post.has_previous%}
-  <a href="?page=1" style="font-family: 'S-CoreDream-2ExtraLight'; color:black;">first</a>
-  <a href="?page={{posts.previous_page_number}}" style="font-family: 'S-CoreDream-2ExtraLight'; color:black;">Previous</a>
+  {%if posts.has_previous%}
+  <a href="?page=1" style="font-family: 'S-CoreDream-2ExtraLight'; color:black;">First<< </a>&nbsp;
+  <a href="?page={{posts.previous_page_number}}" style="font-family: 'S-CoreDream-2ExtraLight'; color:black;">Previous<</a>&nbsp;
   {%endif%}
   <span style="font-family: 'S-CoreDream-2ExtraLight'; color:black;"> {{posts.number}} </span>
   <span style="font-family: 'S-CoreDream-2ExtraLight'; color:black;">of</span>
